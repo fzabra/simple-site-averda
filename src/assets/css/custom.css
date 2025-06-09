@@ -1,0 +1,213 @@
+body.custom, *{
+    font-family: 'Bebas Neue', sans-serif!important;
+}
+
+ .custom .owl-carousel{
+    z-index: 0;
+ }
+ .custom .box-button{
+    position: absolute;
+    top: 129px;
+    width: 100%;
+    text-align: center;
+    
+ }
+
+ .custom .footer-site{
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+ }
+ .custom .footer-site p{
+    color: #fff;
+ }
+ .custom .footer-site img{
+
+    width: 150px;
+    
+
+ }
+
+ @media screen and (min-width: 375px) {
+    .custom .box-button {
+        position: absolute;
+        top: 129px;
+        width: 100%;
+        text-align: center;
+    }
+ }
+
+ @media screen and (min-width: 425px) {
+    .custom .box-button {
+        position: absolute;
+        top:150px;
+        width: 100%;
+        text-align: center;
+    }
+ }
+
+ @media screen and (min-width: 768px) {
+    .custom .box-button {
+        position: absolute;
+        top: 270px;
+        width: 100%;
+        text-align: center;
+    }
+ }
+
+.custom .w3-show-block, .w3-show {
+    display: block!important;
+    position: fixed;
+    top: 40px;
+    z-index: 10;
+    background-color: #110f0f;
+    width: 100%;
+}
+
+.custom .w3-top .w3-bar.w3-theme-d2{
+    background-color: #000;
+}
+
+.custom .w3-top .w3-bar.w3-theme-d2 a{
+    color: #fff;
+}
+
+.custom .banner-slider img{
+    display: none;
+}
+
+.custom .w3-teal, .w3-hover-teal {
+    color: #fff!important;
+    background-color: #0d9e70!important;
+}
+.custom .w3-teal, .w3-hover-teal:hover {
+    color: #fff!important;
+    background-color: #000!important;
+}
+
+.custom .w3-border-teal, .w3-hover-border-teal:hover {
+    border-color: #0d9e70!important;
+}
+
+.custom .w3-text-teal, .w3-hover-text-teal:hover {
+    color: #0d9e70!important;
+}
+.icon-nav{
+    background-image: url(../../images/icons-hamburger.svg);
+    background-color: white;
+    background-size: contain;
+    margin-top: 7px;
+    margin-right: 10px;
+    height: 23px;
+    background-repeat: no-repeat;
+    width: 30px;
+    background-position: bottom;
+    border-radius: 3px;
+}
+
+#team{
+    margin-top: 50px;
+}
+
+#network{
+    padding-top: 0!important;
+}
+
+.fiximg {
+    width: 100vw;
+}
+
+.img-mobile{
+    margin-top: -14px;
+}
+
+.img-mobile img{
+object-fit: contain;
+width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .custom .footer-site{
+        background-color: #000;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+     }
+    .img-mobile{
+        display:none;
+    }
+    .container-site{
+
+    max-width: 1440px;
+    margin: 0 auto;
+
+    }
+    .custom .box-button{
+        top: 0;
+        z-index: 10;
+        width: 150px;
+        height: 40px;
+        left: inherit;
+        right: 10%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .custom .box-button button{
+        color: #fff;
+        height: 39px;
+        padding: 3px 18px;
+    }
+
+    .custom .txt-slider {
+        position: absolute;
+        width: 60%;
+        top: -1rem;
+        left: 35%;
+        color: #fff;
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .w3-bar.w3-theme-d2.w3-left-align{
+        padding-left: 2%;
+    }
+
+    .custom .banner-slider img{
+        display: block;
+        object-fit: cover;
+        width:100%;
+        min-height:350px;
+        max-height:600px;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+
+    .custom .txt-slider {
+        position: absolute;
+        width: 60%;
+        top: 9%;
+        left: 35%;
+        color: #fff;
+        font-size: 80px;
+        line-height: 80px;
+    }
+
+    .custom .w3-col.m5.adress-content{
+        padding-left: 24%;
+    }
+}
+
+#root {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
