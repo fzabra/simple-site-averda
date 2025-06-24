@@ -17,6 +17,7 @@ const data = [
     previsaoPrestacao: "15/09/2024",
     envioAnalise: "-",
     conclusao: "-",
+    link: "https://drive.google.com/file/d/14Q2xlPuIfMBgXVS2rW2Rd3I5HPkcTrGg/view?usp=sharing",
   },
   {
     projeto: "AVERA SKATE 2",
@@ -34,6 +35,7 @@ const data = [
     previsaoPrestacao: "10/01/2024",
     envioAnalise: "-",
     conclusao: "-",
+    link: "https://drive.google.com/file/d/1yXsdU4z1Cpiaz46Xe8T5KVBDGVCdkE9e/view?usp=sharing",
   },
   {
     projeto: "AVERA SKATE 3",
@@ -51,7 +53,7 @@ const data = [
     previsaoPrestacao: "31/03/2026",
     envioAnalise: "-",
     conclusao: "-",
-    link: "https://drive.google.com/open?id=1mB0wipl-IHZiT62jyiy9yy-jJ0luwgG&usp=drive_fs",
+    link: "https://drive.google.com/file/d/17C2RmWHsMB05Hi_aG4Gn0KmqeDxkk64D/view?usp=sharing",
   },
 ];
 
@@ -61,9 +63,10 @@ const Transparencia: React.FC = () => {
 
     <div className="mb-8 text-center bt-download">
         <a
-        href="https://jumpshare.com/s/OyKRwr4xtUhLyBtTXRrF"
+        href="https://drive.google.com/file/d/14OGZE4kGhJaagEb-Bfw_Yg8zoFApnrsM/"
         download
         className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3 rounded"
+        target="_blank"
         >
         📥 Relatório de Emendas (.pdf)
         </a>
