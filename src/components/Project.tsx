@@ -13,42 +13,24 @@ const images = [
   "/images/img8.jpg",
 ];
 
-const animation = {
-  duration: 20000,
-  easing: (t: number) => t,
-};
-
 const Project: React.FC = () => {
-  const [sliderRef] = useKeenSlider<HTMLDivElement>(
-    (slider) => {
-      let isMobile = window.innerWidth < 1024;
-      if (!isMobile) {
-        slider.on("created", () => {
-          slider.moveToIdx(1, true, animation);
-        });
-        slider.on("updated", () => {
-          slider.moveToIdx(slider.track.details.abs + 1, true, animation);
-        });
-        slider.on("animationEnded", () => {
-          slider.moveToIdx(slider.track.details.abs + 1, true, animation);
-        });
-      }
+  const [sliderRef] = useKeenSlider<HTMLDivElement>({
+    loop: true,
+    renderMode: "performance",
+    drag: true, // ativar o drag
+    slides: {
+      perView: 1.2,
+      spacing: 10,
     },
-    {
-      loop: true,
-      renderMode: "performance",
-      drag: false,
-      slides: {
-        perView: 1,
-        spacing: 10,
+    breakpoints: {
+      "(min-width: 640px)": {
+        slides: { perView: 1, spacing: 10 },
       },
-      breakpoints: {
-        "(min-width: 1024px)": {
-          slides: { perView: 3, spacing: 10 },
-        },
+      "(min-width: 1024px)": {
+        slides: { perView: 3, spacing: 20 },
       },
-    }
-  );
+    },
+  });
 
   return (
     <section className="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
@@ -56,20 +38,20 @@ const Project: React.FC = () => {
         <h2>O PROJETO</h2>
         <p>
           COM EXISTÊNCIA DESDE 2008 O PROJETO TEM COMO <br />
-          OBJETIVO PRINCIPAL FOMENTAR A PRATICA ESPORTIVA E <br />
-          ESCOLAR PARA CRIANÇAS E JOVENS , AJUDANDO OS <br />
+          OBJETIVO PRINCIPAL FOMENTAR A PRÁTICA ESPORTIVA E <br />
+          ESCOLAR PARA CRIANÇAS E JOVENS, AJUDANDO OS <br />
           PARTICIPANTES NO DESENVOLVIMENTO DA COORDENAÇÃO <br />
-          MOTORA E TIRA-LOS DAS GRANDES OCIOSIDADES DAS RUAS <br />
+          MOTORA E TIRANDO-OS DA OCIOSIDADE DAS RUAS <br />
           ATRAVÉS DO SKATE.
         </p>
 
         <div ref={sliderRef} className="keen-slider mt-6">
           {images.map((src, i) => (
-            <div key={i} className="keen-slider__slide">
+            <div key={i} className="keen-slider__slide flex justify-center">
               <img
                 src={src}
                 alt={`slide-${i + 1}`}
-                className="w-full h-64 object-cover rounded-md"
+                className="w-48 h-32 object-cover rounded-md"
               />
             </div>
           ))}
