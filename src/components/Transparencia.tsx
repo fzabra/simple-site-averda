@@ -61,11 +61,11 @@ const Transparencia: React.FC = () => {
 
     <div className="mb-8 text-center bt-download">
         <a
-        href="/relatorio.pdf"
+        href="https://jumpshare.com/s/OyKRwr4xtUhLyBtTXRrF"
         download
         className="inline-block bg-teal-600 hover:bg-teal-700 text-white font-semibold px-6 py-3 rounded"
         >
-        📥 Baixar planilha de fomentos (.xlsx)
+        📥 Relatório de Emendas (.pdf)
         </a>
     </div>
 
